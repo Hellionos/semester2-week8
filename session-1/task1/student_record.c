@@ -61,10 +61,3 @@ int main( void ) {
     display_student(a_student);
     return 0;
 }
-
-/*Student a_student = {
-.name = "Jane Smith",
-.student_id_number = 20240001,
-.school = "Physics",
-.degree_subject = "Astrophysics"
-};*/
