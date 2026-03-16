@@ -4,6 +4,9 @@
 
 int main( void ) {
 
+    float width,height = 0.0;
+    width = 5;
+    height = 7;
     // complete the structure definition in the header file first
     // code in main to test the structures and functions
     Point p = { .x=2, .y=3 };
@@ -14,9 +17,9 @@ int main( void ) {
 
 Rectangle makeRectangle( Point p, float width, float height ){
     Rectangle r = {
-        .p = {2,3},
-        .width = 5,
-        .height = 7,
+        .p = p,
+        .width = width,
+        .height = height,
     };
 
     return r;
