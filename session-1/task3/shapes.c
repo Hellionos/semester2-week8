@@ -6,18 +6,26 @@ int main( void ) {
 
     // complete the structure definition in the header file first
     // code in main to test the structures and functions
+    Point p = { .x=2, .y=3 };
+    makeRectangle(p, width, height);
     
     return 0;
 }
 
 Rectangle makeRectangle( Point p, float width, float height ){
-    Rectangle r;
+    Rectangle r = {
+        .p = {2,3},
+        .width = 5,
+        .height = 7,
+    };
 
     return r;
 }
 
 float area( Rectangle r ) {
     float a = 0.0;
+    a = r.width*r.height;
+
 
     return a;
 }

@@ -10,6 +10,8 @@ typedef struct _point {
 
 typedef struct _rectangle {
     // fields
+    float width, height;
+    Point p;
 } Rectangle;
 
 // function headers - implement in shapes.c
