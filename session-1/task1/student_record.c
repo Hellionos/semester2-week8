@@ -19,8 +19,11 @@
 float calculate_average(struct student_record student) {
     // TODO: Implement this function to calculate and return the average
     // of the three module marks
+    float average = 0.0;
+    average = student.marks[1] + student.marks[2] + student.marks[0];
+    average = average/3; 
     
-    return 0.0; // Placeholder return value
+    return average;
 }
 
 /**
@@ -31,6 +34,10 @@ float calculate_average(struct student_record student) {
 void display_student(struct student_record student) {
     // TODO: Implement this function to display student information
     // Format: Name, ID, individual marks, and average mark
+    float average = 0.0;
+    average = calculate_average(student);
+    printf("Name: %s, ID: %d, Marks: %.1f,%.1f,%.1f, Average: %.1f\n",
+        student.name,student.id,student.marks[0],student.marks[1],student.marks[2],average);
 }
 
 /*
@@ -40,9 +47,13 @@ int main( void ) {
     // TODO: Create and initialise a student variable with sample data
     // Example: name = "John Smith", id = 12345, marks = {75.0, 68.5, 81.0}
     
-    struct student_record student;
-    
+    struct student_record student = {"Ethan North", 201990, {75.0, 68.5, 86.0}};
+
+    //strcpy(student.name,"Ethan West");
+    //student.id = 201990;
+    //student.marks = {75.0,68.5,81.0};
     // TODO: display the student data and average mark
-    
+    //printf("%.2f\n",calculate_average(student));
+    display_student(student);
     return 0;
 }
