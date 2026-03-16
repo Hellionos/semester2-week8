@@ -15,6 +15,7 @@ int main( void ) {
     printf(" Distance between (%.1f,%.1f) and (%.1f,%.1f) is %f\n", 
              p1.x,p1.y,p2.x,p2.y,distance(p1,p2));
     */
+   printf("%f",sqrt(4));
     Point p1 = { .x=1, .y=2 };
     Point p2 = { .x=-2, .y=4 };
     printf(" Distance between (%.1f,%.1f) and (%.1f,%.1f) is %f\n", 
@@ -24,8 +25,10 @@ int main( void ) {
     return 0;
 }
 
-float distance( p, q ) {
-    float distance = 0.0;
-    distance = sqrt(p*p + Point.q**2);
-    return 0.0;
+float distance( Point p1, Point p2 ) {
+    float dx,dy,distance = 0.0;
+    dx = p1.x - p2.x;
+    dy = p1.y - p2.y;
+    distance = sqrt(dx*dx + dy*dy);
+    return distance;
 }
