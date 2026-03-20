@@ -57,10 +57,10 @@ The output should be identical to the original single-file program.
 - If your program behavior differs from the original, check that all functions are implemented correctly
 
 ## Reflection Questions
-1. How does separating the program into multiple files improve its organisation?
-2. What is the purpose of include guards, and what problems do they prevent?
-3. Why do we include the header file in both the implementation file and the main program file?
-4. How would you extend this modular structure if you wanted to add more functionality, such as reading/writing student records to a file?
+1. How does separating the program into multiple files improve its organisation? - It doesn't, this is way more complex, having to go through and cross reference other files to make sense of any one of them. Also it's harder to implement by a bit (took me 50 mins to sort out the multiple files compared to just having it in one).
+2. What is the purpose of include guards, and what problems do they prevent? - prevents multiple definitions
+3. Why do we include the header file in both the implementation file and the main program file? - both files will likely need the definitions from the header file
+4. How would you extend this modular structure if you wanted to add more functionality, such as reading/writing student records to a file? Add more functions to student.c that would allow for this.
 
 ## Extension Tasks
 If you finish early, try these extension tasks:
