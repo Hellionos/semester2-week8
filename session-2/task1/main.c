@@ -22,7 +22,7 @@ int main() {
     printf("\nThe average mark is: %.1f\n", average);
     
     // Update the student's name and third module mark
-    update_name(&student, "Jane Smith");
+    update_name(&student, "Jane Doe");
     update_mark(&student, 2, 92.5); // Update the third module (index 2)
     
     // Display the updated student information
