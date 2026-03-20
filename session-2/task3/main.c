@@ -7,7 +7,7 @@
 int main( void ) {
     // Create and initialise a student variable
     Student student = {
-        .name = "John Smith",
+        .name = "John Smithy",
         .id = 12345,
         .marks = {75.0, 68.5, 81.0}
     };
