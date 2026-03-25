@@ -1,7 +1,7 @@
 
 #include <stdbool.h>
 #include <math.h>
-#include <stdlib.h>
+
 
 #include "shapes.h"
 
@@ -55,7 +55,7 @@ float triangleArea( Triangle t ) {
 
 bool samePoint( Point p1, Point p2 ) {
     bool same;
-    if (abs(lineLength(makeLine(p1,p2)))<1.0e-6) {
+    if (fabs(p1.x - p2.x) < 1.0e-6 && fabs(p1.y - p2.y) < 1.0e-6) {
         same = true;
     } else {
         same = false;
